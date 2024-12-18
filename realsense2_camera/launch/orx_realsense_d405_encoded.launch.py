@@ -161,8 +161,9 @@ def launch_setup(context, params, param_name_suffix=""):
     input_width = int(color_profile.split("x")[0])
     frame_rate = int(color_profile.split("x")[2])
 
-    intel_realsense_rgb_raw_topic = f"{datahub_name}/{camera_name}/color/image_rect_raw"
-    intel_realsense_rgb_compressed_topic = f"{datahub_name}/{camera_name}/color/image_rect_raw/h264"
+    # datahub_name comes from the namespace
+    intel_realsense_rgb_raw_topic = f"{camera_name}/color/image_rect_raw"
+    intel_realsense_rgb_compressed_topic = f"{camera_name}/color/image_rect_raw/h264"
 
     intel_realsense_node = ComposableNode(
         package="realsense2_camera",
