@@ -1,0 +1,6 @@
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    USE_LIFECYCLE_NODE
+
+[0m

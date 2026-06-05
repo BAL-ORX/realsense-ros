@@ -1,0 +1,6 @@
+docker:
+  run:
+    container_name: realsense_dev_container
+  image:
+    additional_image_keys:
+      - realsense
